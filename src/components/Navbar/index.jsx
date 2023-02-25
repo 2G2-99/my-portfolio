@@ -1,22 +1,30 @@
 import {
 	Box,
+	Text,
 	Button,
 	ButtonGroup,
 	Container,
 	Flex,
-	Spacer,
-	Heading,
+	HStack,
+	IconButton,
 	useBreakpointValue,
+	Menu,
+	MenuButton,
+	MenuList,
+	MenuItem,
+	MenuItemOption,
+	MenuGroup,
+	MenuOptionGroup,
+	MenuDivider,
 } from '@chakra-ui/react';
 import { NavLink as RouterLink } from 'react-router-dom';
+import { FiMenu } from 'react-icons/fi';
 
 export const Navbar = () => {
-	// Check on viewport for breakpoint
 	const isDesktop = useBreakpointValue({
 		base: false,
 		lg: true,
 	});
-
 	return (
 		<Box
 			as="section"
@@ -25,66 +33,17 @@ export const Navbar = () => {
 				md: '24',
 			}}
 		>
-			<Box
-				as="nav"
-				bg="bg-surface"
-				boxShadow="sm"
-				py={{
-					base: '4',
-					lg: '5',
-				}}
-			>
-				<Flex justify="space-between">
-					{isDesktop ? (
-						<>
-							<Flex justify="space-between" flex="1">
-								<Heading as="h1">Santiago Gomez</Heading>
-								<Spacer />
-								<ButtonGroup variant="link" spacing="8">
-									{['Home', 'About', 'Projects', 'Contact'].map(item => (
-										<Button
-											as={RouterLink}
-											to={item.toLowerCase()}
-											key={item}
-											className={({ isActive }) =>
-												isActive ? 'nav-link active' : 'nav-link'
-											}
-										>
-											{item}
-										</Button>
-									))}
-								</ButtonGroup>
-							</Flex>
-						</>
-					) : (
-						<Flex justify="center" flex="1" wrap={'wrap'}>
-							<Heading as="h1">Santiago Gomez</Heading>
-							<ButtonGroup variant="link" spacing="8">
-								{['Home', 'About', 'Projects', 'Contact'].map(item => (
-									<Button
-										as={RouterLink}
-										to={item.toLowerCase()}
-										key={item}
-										className={({ isActive }) =>
-											isActive ? 'nav-link active' : 'nav-link'
-										}
-									>
-										{item}
-									</Button>
-								))}
-							</ButtonGroup>
-						</Flex>
-					)}
-				</Flex>
-			</Box>
-		</Box>
-	);
-};
-
-export default Navbar;
-
-/**
- * {isDesktop ? (
+			<Box as="nav" bg="bg-surface" boxShadow="sm">
+				<Container
+					py={{
+						base: '4',
+						lg: '5',
+					}}
+					maxW="full"
+				>
+					<HStack spacing="10" justify="space-between">
+						<Text as="span">Santiago Gomez</Text>
+						{isDesktop ? (
 							<Flex justify="space-between" flex="1">
 								<ButtonGroup variant="link" spacing="8">
 									{['Home', 'About', 'Projects', 'Contact'].map(item => (
@@ -102,22 +61,37 @@ export default Navbar;
 								</ButtonGroup>
 							</Flex>
 						) : (
-							<Flex justify="center" flex="1" wrap={'wrap'}>
-								<Heading as="h1">Santiago Gomez</Heading>
-								<ButtonGroup variant="link" spacing="8">
-									{['Home', 'About', 'Projects', 'Contact'].map(item => (
-										<Button
-											as={RouterLink}
-											to={item.toLowerCase()}
-											key={item}
-											className={({ isActive }) =>
-												isActive ? 'nav-link active' : 'nav-link'
-											}
-										>
-											{item}
-										</Button>
-									))}
-								</ButtonGroup>
-							</Flex>
+							<Box>
+								<Menu placement="bottom-start">
+									<MenuButton
+										as={IconButton}
+										aria-label="Open Menu"
+										variant="ghost"
+										icon={<FiMenu />}
+										fontSize="1.5rem"
+									/>
+									<MenuList>
+										{['Home', 'About', 'Projects', 'Contact'].map(item => (
+											<MenuItem
+												as={RouterLink}
+												to={item.toLowerCase()}
+												key={item}
+												className={({ isActive }) =>
+													isActive ? 'nav-link active' : 'nav-link'
+												}
+											>
+												{item}
+											</MenuItem>
+										))}
+									</MenuList>
+								</Menu>
+							</Box>
 						)}
- */
+					</HStack>
+				</Container>
+			</Box>
+		</Box>
+	);
+};
+
+export default Navbar;
