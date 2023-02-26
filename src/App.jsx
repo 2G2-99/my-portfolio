@@ -11,7 +11,7 @@ function App() {
 				<Navbar />
 				<Container as="main" h={'90%'} maxW={'full'}>
 					<Routes>
-						<Route path="/home" element={<Home />} />
+						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />
 						<Route path="/projects" element={<Projects />} />
 						<Route path="/contact" element={<Contact />} />
