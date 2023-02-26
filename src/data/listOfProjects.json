@@ -1,0 +1,153 @@
+[
+	{
+		"id": "01",
+		"title": "Password Generator",
+		"picture": "../static_assets/images/password_generator.png",
+		"description": "An easy tool to generate random passwords with the parameters given by the user through a series of prompts.",
+		"technologies": [
+			{
+				"id": "01",
+				"technology": "JavaScript",
+				"path": "../static_assets/svg/javascript-svgrepo-com.svg"
+			}
+		],
+		"repository": "https://github.com/2G2-99/password-generator",
+		"deployed": "https://2g2-99.github.io/password-generator/"
+	},
+
+	{
+		"id": "02",
+		"title": "README file generator",
+		"picture": "../static_assets/images/markdown_generator.png",
+		"description": "An application on the CLI with the intention to help the developers save some time when creating a quality README, by entering information about the project and then generating a markdown with a template.",
+		"technologies": [
+			{
+				"id": "01",
+				"technology": "JavaScript",
+				"path": "../static_assets/svg/javascript-svgrepo-com.svg"
+			},
+			{
+				"id": "02",
+				"technology": "Git",
+				"path": "../static_assets/svg/git-svgrepo-com.svg"
+			},
+			{
+				"id": "03",
+				"technology": "Node.js",
+				"path": "../static_assets/svg/node-js-svgrepo-com.svg"
+			}
+		],
+		"repository": "https://github.com/2G2-99/README-generator",
+		"deployed": ""
+	},
+	{
+		"id": "03",
+		"title": "Weather Dashboard",
+		"picture": "../static_assets/images/weather_dashboard.png",
+		"description": "Basic application that shows the forecast information of a given location of the current day and the next 4 days. It also keeps track of the searched locations for an easy access.",
+		"technologies": [
+			{
+				"id": "01",
+				"technology": "Bootstrap",
+				"path": "../static_assets/svg/bootstrap-svgrepo-com.svg"
+			},
+			{
+				"id": "02",
+				"technology": "CSS 3",
+				"path": "../static_assets/svg/css-3-svgrepo-com.svg"
+			},
+			{
+				"id": "03",
+				"technology": "JavaScript",
+				"path": "../static_assets/svg/javascript-svgrepo-com.svg"
+			},
+			{
+				"id": "04",
+				"technology": "JQuery",
+				"path": "../static_assets/svg/jquery-svgrepo-com.svg"
+			}
+		],
+		"repository": "https://github.com/2G2-99/weather-dashboard",
+		"deployed": "https://2g2-99.github.io/weather-dashboard/"
+	},
+	{
+		"id": "04",
+		"title": "Team Profile",
+		"picture": "../static_assets/images/team_builder.png",
+		"description": "An inquirer application that generates a web page rendering cards with the gathered information from a manager and the development team.",
+		"technologies": [
+			{
+				"id": "01",
+				"technology": "Bootstrap",
+				"path": "../static_assets/svg/bootstrap-svgrepo-com.svg"
+			},
+			{
+				"id": "02",
+				"technology": "JavaScript",
+				"path": "../static_assets/svg/javascript-svgrepo-com.svg"
+			},
+			{
+				"id": "03",
+				"technology": "Git",
+				"path": "../static_assets/svg/git-svgrepo-com.svg"
+			},
+			{
+				"id": "04",
+				"technology": "Node.js",
+				"path": "../static_assets/svg/node-js-svgrepo-com.svg"
+			}
+		],
+		"repository": "https://github.com/2G2-99/team-profile-app",
+		"deployed": ""
+	},
+	{
+		"id": "05",
+		"title": "Day Scheduler",
+		"picture": "../static_assets/images/scheduler.png",
+		"description": "Schedule app to organise the day of a busy developer by the use of the local storage.",
+		"technologies": [
+			{
+				"id": "01",
+				"technology": "JavaScript",
+				"path": "../static_assets/svg/javascript-svgrepo-com.svg"
+			},
+			{
+				"id": "02",
+				"technology": "JQuery",
+				"path": "../static_assets/svg/jquery-svgrepo-com.svg"
+			}
+		],
+		"repository": "https://github.com/2G2-99/day-scheduler-challenge",
+		"deployed": "https://2g2-99.github.io/day-scheduler-challenge/"
+	},
+	{
+		"id": "06",
+		"title": "Bucket List",
+		"picture": "../static_assets/images/bucket_list.png",
+		"description": "A website developed in a team, where I was given the task to carry with part of the back end, more exactly processing information by a query request of a certain location and work with the Google Geocoding API to convert a location name into coordinates to be used on the Google Maps API, and the dynamically render a map centred at the searched place.",
+		"technologies": [
+			{
+				"id": "01",
+				"technology": "HTML5",
+				"path": "../static_assets/svg/html-5-svgrepo-com.svg"
+			},
+			{
+				"id": "02",
+				"technology": "Bootstrap",
+				"path": "../static_assets/svg/bootstrap-svgrepo-com.svg"
+			},
+			{
+				"id": "03",
+				"technology": "JavaScript",
+				"path": "../static_assets/svg/javascript-svgrepo-com.svg"
+			},
+			{
+				"id": "04",
+				"technology": "JQuery",
+				"path": "../static_assets/svg/jquery-svgrepo-com.svg"
+			}
+		],
+		"repository": "https://github.com/h-fikri/Travel-List-Jan2023",
+		"deployed": "https://h-fikri.github.io/Travel-List-Jan2023/"
+	}
+]
