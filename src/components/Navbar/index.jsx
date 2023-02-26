@@ -12,10 +12,6 @@ import {
 	MenuButton,
 	MenuList,
 	MenuItem,
-	MenuItemOption,
-	MenuGroup,
-	MenuOptionGroup,
-	MenuDivider,
 } from '@chakra-ui/react';
 import { NavLink as RouterLink } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
@@ -26,13 +22,7 @@ export const Navbar = () => {
 		lg: true,
 	});
 	return (
-		<Box
-			as="section"
-			pb={{
-				base: '12',
-				md: '24',
-			}}
-		>
+		<Box as="header" h={'10%'}>
 			<Box as="nav" bg="bg-surface" boxShadow="sm">
 				<Container
 					py={{
