@@ -22,7 +22,7 @@ export const Navbar = () => {
 		lg: true,
 	});
 	return (
-		<Box as="header" h={'10%'}>
+		<Box as="header" h={'10%'} mb={'2rem'}>
 			<Box as="nav" bg="bg-surface" boxShadow="sm">
 				<Container
 					py={{
