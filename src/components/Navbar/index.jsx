@@ -64,7 +64,7 @@ export const Navbar = () => {
 										{['Home', 'About', 'Projects', 'Contact'].map(item => (
 											<MenuItem
 												as={RouterLink}
-												to={item.toLowerCase()}
+												to={item === 'Home' ? '/' : item.toLowerCase()}
 												key={item}
 												className={({ isActive }) =>
 													isActive ? 'nav-link active' : 'nav-link'

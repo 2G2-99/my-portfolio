@@ -1,8 +1,14 @@
 import { Box, Container } from '@chakra-ui/react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Navbar } from './components/export';
 
-import { Home, About, Projects, Contact } from './pages/export';
+// Components
+import Navbar from './components/Navbar';
+
+// Pages
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Projects from './Pages/Projects';
+import Contact from './Pages/Contact';
 
 function App() {
 	return (
