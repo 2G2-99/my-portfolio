@@ -11,7 +11,8 @@ import {
 	HStack,
 	Image,
 	Text,
-	Icon,
+	Tooltip,
+	Spacer,
 } from '@chakra-ui/react';
 
 import {
@@ -27,10 +28,10 @@ import {
 const About = () => {
 	return (
 		<Flex direction={'column'} justify={'space-evenly'} align={'center'}>
-			<Container>
+			<Container maxW={'container.xl'}>
 				<Card id="about-card">
 					<CardHeader>
-						<Image id="selfie" alt="That's me" src={selfie} />
+						<Image id="selfie" alt="That's me" src={selfie} fit={'contain'} />
 					</CardHeader>
 					<CardBody>
 						<Text className="card-text">
@@ -67,14 +68,56 @@ const About = () => {
 			<VStack id="display-skills">
 				<Heading as={'h3'}>Skills</Heading>
 				<Text>I'm well experienced in this technologies...</Text>
-				<HStack id="skills-set">
-					<Image src={html_5_logo} alt="HTML5 logo" />
-					<Image src={css_logo} alt="CSS logo" />
-					<Image src={js_logo} alt="JavaScript logo" />
-					<Image src={bootstrap_logo} alt="Bootstrap logo" />
-					<Image src={nodejs_logo} alt="Node.js logo" />
-					<Image src={react_logo} alt="React logo" />
-				</HStack>
+				<Flex id="skills-set" wrap={'wrap'} justify={'center'}>
+					<Tooltip label={'HTML 5'}>
+						<Image
+							src={html_5_logo}
+							alt="HTML5 logo"
+							h={{ base: '3rem' }}
+							margin={{ base: '2' }}
+						/>
+					</Tooltip>
+					<Tooltip label={'CSS3'}>
+						<Image
+							src={css_logo}
+							alt="CSS logo"
+							h={{ base: '3rem' }}
+							margin={{ base: '2' }}
+						/>
+					</Tooltip>
+					<Tooltip label={'JavaScript'}>
+						<Image
+							src={js_logo}
+							alt="JavaScript logo"
+							h={{ base: '3rem' }}
+							margin={{ base: '2' }}
+						/>
+					</Tooltip>
+					<Tooltip label={'Bootstrap'}>
+						<Image
+							src={bootstrap_logo}
+							alt="Bootstrap logo"
+							h={{ base: '3rem' }}
+							margin={{ base: '2' }}
+						/>
+					</Tooltip>
+					<Tooltip label={'Node.js'}>
+						<Image
+							src={nodejs_logo}
+							alt="Node.js logo"
+							h={{ base: '3rem' }}
+							margin={{ base: '2' }}
+						/>
+					</Tooltip>
+					<Tooltip label={'React'}>
+						<Image
+							src={react_logo}
+							alt="React logo"
+							h={{ base: '3rem' }}
+							margin={{ base: '2' }}
+						/>
+					</Tooltip>
+				</Flex>
 			</VStack>
 		</Flex>
 	);
