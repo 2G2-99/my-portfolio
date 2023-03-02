@@ -7,11 +7,12 @@ import {
 	Image,
 	ButtonGroup,
 	Divider,
-	Flex,
 	Button,
+	HStack,
+	Link,
 } from '@chakra-ui/react';
 
-import { GitHubLogo, GoTo } from '../../../assets/export';
+import { github_logo, goto } from '../../../assets/export';
 
 const Display = ({
 	id,
@@ -25,45 +26,52 @@ const Display = ({
 	// Generate link buttons
 	const generateButtonOf = (site, svg) => {
 		return site ? (
-			<button className="link-btn-pushable">
-				<span className="link-btn-shadow"></span>
-				<span className="link-btn-edge"></span>
-				<a
-					className="link-btn-front text"
-					href={site}
-					role="button"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<img className="icon-btn" src={svg} alt={`Link to ${site}	`} />
-				</a>
-			</button>
+			<Link
+				href={site}
+				rel="noreferrer"
+				isExternal={true}
+				// Style
+				width={'9'}
+				padding={'0.5'}
+			>
+				<Image src={svg} alt={`Link to ${site}`} />
+			</Link>
 		) : null;
 	};
 
 	return (
-		<Card className="project-card" key={id}>
-			<CardHeader>
-				<Heading className="project-title">{title}</Heading>
+		<Card
+			className="project-card"
+			key={id}
+			borderRadius={'lg'}
+			boxShadow={'dark-lg'}
+		>
+			<CardHeader p={'.5rem 0 0 .5rem'}>
+				<Heading className="project-title" fontSize={'2rem'}>
+					{title}
+				</Heading>
 			</CardHeader>
 			<CardBody>
 				<Image
 					src={picture}
 					className="project-image"
 					alt={`Screenshot of ${title}`}
+					borderRadius={'sm'}
+					boxShadow={'base'}
 				/>
-				<Flex className="technologies">{technologies}</Flex>
+				<HStack className="technologies" pt={'1rem'}>
+					{technologies}
+				</HStack>
 			</CardBody>
 			<Divider />
 			<CardFooter>
 				<ButtonGroup>
-					<Button>
-						{generateButtonOf(repository, GitHubLogo)}
-						{generateButtonOf(deployed, GoTo)}
-					</Button>
+					{generateButtonOf(repository, github_logo)}
+					{generateButtonOf(deployed, goto)}
 				</ButtonGroup>
 			</CardFooter>
 		</Card>
 	);
 };
+
 export default Display;
