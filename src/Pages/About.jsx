@@ -29,9 +29,18 @@ const About = () => {
 	return (
 		<Flex direction={'column'} justify={'space-evenly'} align={'center'}>
 			<Container maxW={'container.xl'}>
-				<Card id="about-card">
-					<CardHeader>
-						<Image id="selfie" alt="That's me" src={selfie} fit={'contain'} />
+				<Card id="about-card" boxShadow={'dark-lg'}>
+					<CardHeader padding={'0'}>
+						<Image
+							id="selfie"
+							alt="That's me"
+							src={selfie}
+							objectFit={'cover'}
+							boxSize={{ sm: 'xs' }}
+							margin={{ base: 'auto', sm: '1rem auto' }}
+							borderRadius={{ base: 'sm', sm: 'full' }}
+							boxShadow={'md'}
+						/>
 					</CardHeader>
 					<CardBody>
 						<Text className="card-text">
@@ -65,7 +74,14 @@ const About = () => {
 					</CardFooter>
 				</Card>
 			</Container>
-			<VStack id="display-skills">
+			<VStack
+				id="display-skills"
+				borderRadius={'md'}
+				backdropFilter="auto"
+				backdropContrast={'70%'}
+				boxShadow={'inner'}
+				margin={'10'}
+			>
 				<Heading as={'h3'}>Skills</Heading>
 				<Text>I'm well experienced in this technologies...</Text>
 				<Flex id="skills-set" wrap={'wrap'} justify={'center'}>
