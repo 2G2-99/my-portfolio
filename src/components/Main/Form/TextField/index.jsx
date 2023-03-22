@@ -4,7 +4,6 @@ import {
 	FormHelperText,
 	FormLabel,
 } from '@chakra-ui/form-control';
-import { Input } from '@chakra-ui/input';
 import { Field, useField } from 'formik';
 
 const TextField = ({ label, formField, helpMessage, ...props }) => {
