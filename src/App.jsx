@@ -10,12 +10,19 @@ import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
 
+// Font
+import '@fontsource/josefin-sans';
+import '@fontsource/bungee';
+import '@fontsource/bungee-hairline';
+
 function App() {
 	return (
 		<Router>
-			<Box id="root-body" h="100vh">
-				<Navbar />
-				<Container as="main" h={'90%'} maxW={'full'}>
+			<Box id="root-body" h="100vh" fontFamily={'Josefin Sans'}>
+				<Box as="header" color={'white'}>
+					<Navbar />
+				</Box>
+				<Container as="main" h={'85%'} maxW={'full'}>
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />
