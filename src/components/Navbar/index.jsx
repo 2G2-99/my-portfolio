@@ -14,7 +14,7 @@ import {
 	MenuItem,
 } from '@chakra-ui/react';
 import { NavLink as RouterLink } from 'react-router-dom';
-import { FiMenu } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navbar = () => {
 	const isDesktop = useBreakpointValue({
@@ -58,13 +58,15 @@ const Navbar = () => {
 						</Flex>
 					) : (
 						<Box>
-							<Menu placement="bottom-start">
+							<Menu placement="auto-end">
 								<MenuButton
 									as={IconButton}
 									aria-label="Open Menu"
-									variant="ghost"
+									bg={'transparent'}
 									icon={<FiMenu />}
-									fontSize="1.5rem"
+									fontSize={{ base: '1.25rem', sm: '1.75rem' }}
+									_hover={{ bg: 'transparent', color: 'brand.300' }}
+									_active={{ color: 'brand.400' }}
 								/>
 								<MenuList>
 									{['Home', 'About', 'Projects', 'Contact'].map(item => (
