@@ -15,7 +15,7 @@ function App() {
 		<Router>
 			<Box id="root-body" h="100vh">
 				<Navbar />
-				<Container as="main" h={'90%'} maxW={'full'}>
+				<Container as="main" h={'85%'} maxW={'full'}>
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />

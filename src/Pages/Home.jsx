@@ -1,4 +1,4 @@
-import { Container, Flex, Link, Spacer, Text, VStack } from '@chakra-ui/react';
+import { Container, Flex, Link, Text } from '@chakra-ui/react';
 import { Hero } from '../components/export';
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
 				<Hero />
 			</Container>
 			<Text display={'block'} position={'absolute'} right={'0'} bottom={'0'}>
-				Background by:
+				Background by: {/* */}
 				<Link
 					id="attribution-link"
 					href="https://svgbackgrounds.com"
