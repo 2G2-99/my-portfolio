@@ -1,15 +1,16 @@
 import { extendTheme } from '@chakra-ui/react';
 import { buttonStyles as Button } from './components/buttonStyles';
+import { menuStyles as Menu } from './components/menuStyles';
 
 export const myNewTheme = extendTheme({
 	colors: {
 		brand: {
-			primary: '#184E81',
-			lightPrimary: '#56ACE0',
-			secondary: '#FFC10D',
-			highlight: '#FB8500',
-			wrong: '#d00000',
-			correct: '#80b918',
+			100: '#184E81',
+			200: '#56ACE0',
+			300: '#FFC10D',
+			400: '#FB8500',
+			500: '#d00000',
+			600: '#80b918',
 		},
 	},
 
@@ -21,5 +22,6 @@ export const myNewTheme = extendTheme({
 
 	components: {
 		Button,
+		Menu,
 	},
 });

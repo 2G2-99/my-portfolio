@@ -8,11 +8,11 @@ export const buttonStyles = {
 			bg: 'primary',
 			color: 'white',
 			_hover: {
-				color: 'brand.secondary',
+				color: 'brand.300',
 				transform: 'scale(1.125)',
 			},
 			_active: {
-				color: 'brand.highlight',
+				color: 'brand.400',
 				textDecoration: 'none',
 				transform: 'scale(1)',
 			},

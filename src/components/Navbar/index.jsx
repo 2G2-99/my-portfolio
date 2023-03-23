@@ -23,7 +23,7 @@ const Navbar = () => {
 	});
 
 	return (
-		<Box as="nav" boxShadow="sm" bg={'brand.primary'}>
+		<Box as="nav" boxShadow="sm" bg={'brand.100'}>
 			<Container
 				py={{
 					base: '4',
