@@ -15,7 +15,7 @@ const baseStyle = definePartsStyle({
 		py: '4',
 		borderRadius: 'lg',
 		border: 'none',
-		bg: 'brand.200',
+		bg: 'brand.400',
 	},
 	item: {
 		// this will style the MenuItem and MenuItemOption components

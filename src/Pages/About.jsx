@@ -27,7 +27,13 @@ import {
 
 const About = () => {
 	return (
-		<Flex direction={'column'} justify={'space-evenly'} align={'center'}>
+		<Flex
+			py={'1rem'}
+			id="about"
+			direction={'column'}
+			justify={'space-evenly'}
+			align={'center'}
+		>
 			<Container maxW={'container.xl'}>
 				<Card id="about-card" boxShadow={'dark-lg'}>
 					<CardHeader padding={'0'}>
