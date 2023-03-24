@@ -19,10 +19,10 @@ function App() {
 	return (
 		<Router>
 			<Box id="root-body" h="100vh" fontFamily={'Josefin Sans'}>
-				<Box as="header" color={'white'}>
+				<Box as="header" h={'10%'} color={'white'}>
 					<Navbar />
 				</Box>
-				<Container as="main" h={'85%'} maxW={'full'}>
+				<Container as="main" h={'90%'} maxW={'full'} bg={'brand.200'}>
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />

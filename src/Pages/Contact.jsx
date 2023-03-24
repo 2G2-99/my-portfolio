@@ -3,7 +3,7 @@ import Form from '../components/Main/Form';
 
 const Contact = () => {
 	return (
-		<Box>
+		<Box py={'1rem'}>
 			<Form />
 		</Box>
 	);
