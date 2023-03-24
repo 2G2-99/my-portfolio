@@ -11,7 +11,13 @@ const Home = () => {
 			position={'relative'}
 			h={'100%'}
 		>
-			<Container>
+			<Container
+				backdropFilter="auto"
+				backdropContrast={'50%'}
+				boxShadow={'inner'}
+				py={'2'}
+				borderRadius={'md'}
+			>
 				<Hero />
 			</Container>
 			<Text display={'block'} position={'absolute'} right={'0'} bottom={'0'}>

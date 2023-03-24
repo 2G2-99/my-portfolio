@@ -18,11 +18,24 @@ import '@fontsource/bungee-hairline';
 function App() {
 	return (
 		<Router>
-			<Box id="root-body" h="100vh" fontFamily={'Josefin Sans'}>
+			<Box
+				id="root-body"
+				h="100vh"
+				fontFamily={'Josefin Sans'}
+				bg={'brand.200'}
+			>
 				<Box as="header" h={'10%'} color={'white'}>
 					<Navbar />
 				</Box>
-				<Container as="main" h={'90%'} maxW={'full'} bg={'brand.200'}>
+				<Container
+					as="main"
+					h={'90%'}
+					maxW={'full'}
+					bgImage={'url(./src/assets/svg/backgrounds/liquid-cheese.svg)'}
+					bgSize={'cover'}
+					bgRepeat={'no-repeat'}
+					bgPosition={'center'}
+				>
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />
