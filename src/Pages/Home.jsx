@@ -1,26 +1,11 @@
-import { Container, Flex, Link, Text } from '@chakra-ui/react';
+import { Container, Link, Text } from '@chakra-ui/react';
 import { Hero } from '../components/export';
 
 const Home = () => {
 	return (
-		<Flex
-			id="home"
-			wrap={'wrap'}
-			direction={'column'}
-			justify={'center'}
-			position={'relative'}
-			h={'100%'}
-		>
-			<Container
-				backdropFilter="auto"
-				backdropContrast={'50%'}
-				boxShadow={'inner'}
-				py={'2'}
-				borderRadius={'md'}
-			>
-				<Hero />
-			</Container>
-			<Text display={'block'} position={'absolute'} right={'0'} bottom={'0'}>
+		<Container id="home">
+			<Hero />
+			<Text position={'absolute'} right={'1'} bottom={'0'}>
 				Background by: {/* */}
 				<Link
 					id="attribution-link"
@@ -31,7 +16,7 @@ const Home = () => {
 					SVGBackgrounds.com
 				</Link>
 			</Text>
-		</Flex>
+		</Container>
 	);
 };
 
