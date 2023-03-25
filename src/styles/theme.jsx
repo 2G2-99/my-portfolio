@@ -12,6 +12,7 @@ export const myNewTheme = extendTheme({
 			400: '#FB8500',
 			500: '#d00000',
 			600: '#80b918',
+			900: '#1A202C',
 		},
 	},
 

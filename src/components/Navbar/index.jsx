@@ -32,6 +32,7 @@ const Navbar = () => {
 							as="span"
 							fontSize={{ base: '1.25rem', sm: '1.75rem', md: '2.5rem' }}
 							fontFamily={'Bungee'}
+							userSelect={'none'}
 						>
 							Santiago Gomez
 						</Text>

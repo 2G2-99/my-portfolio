@@ -13,3 +13,5 @@ ReactDOM.createRoot(rootElement).render(
 		</ChakraProvider>
 	</React.StrictMode>
 );
+
+//  TODO: Fix height of main, so it covers the total of the screen (except the header 10%)
