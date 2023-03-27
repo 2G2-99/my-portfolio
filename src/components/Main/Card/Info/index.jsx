@@ -1,26 +1,22 @@
-import {
-	Card,
-	CardBody,
-	CardFooter,
-	CardHeader,
-	Image,
-} from '@chakra-ui/react';
+import { Card, CardBody, CardFooter, CardHeader } from '@chakra-ui/react';
 import CustomButton from '../../CustomButton';
+import Framed from '../../Framed';
 
 const Info = ({ image, text, resume, button }) => {
 	return (
 		<Card id="about-card" boxShadow={'dark-lg'}>
 			<CardHeader padding={'0'}>
-				<Image
+				{/* <Image
 					id="selfie"
 					alt="That's me"
 					src={image}
 					objectFit={'cover'}
 					boxSize={{ sm: 'xs' }}
 					margin={{ base: 'auto', sm: '1rem auto' }}
-					borderRadius={{ base: 'sm', sm: 'full' }}
+					borderRadius={'md'}
 					boxShadow={'md'}
-				/>
+				/> */}
+				<Framed id={'selfie'} image={image} size={{ sm: 'sm' }} />
 			</CardHeader>
 			<CardBody>{text}</CardBody>
 			<CardFooter>

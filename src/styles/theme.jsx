@@ -1,6 +1,7 @@
 import { extendTheme } from '@chakra-ui/react';
 import { buttonStyles as Button } from './components/buttonStyles';
 import customButtonStyles from './components/customButtonStyles';
+import framedStyles from './components/framedStyles';
 import { menuTheme as Menu } from './components/menuTheme';
 
 export const myNewTheme = extendTheme({
@@ -27,6 +28,7 @@ export const myNewTheme = extendTheme({
 	components: {
 		Button,
 		customButtonStyles,
+		framedStyles,
 		Menu,
 	},
 });
