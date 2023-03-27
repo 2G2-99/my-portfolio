@@ -1,5 +1,6 @@
 import { extendTheme } from '@chakra-ui/react';
 import { buttonStyles as Button } from './components/buttonStyles';
+import customButtonStyles from './components/customButtonStyles';
 import { menuTheme as Menu } from './components/menuTheme';
 
 export const myNewTheme = extendTheme({
@@ -10,6 +11,7 @@ export const myNewTheme = extendTheme({
 			250: '#a9d4ef',
 			300: '#FFC10D',
 			400: '#FB8500',
+			450: '#ffe6cc',
 			500: '#d00000',
 			600: '#80b918',
 			900: '#1A202C',
@@ -19,11 +21,12 @@ export const myNewTheme = extendTheme({
 	fonts: {
 		body: `'Josefin Sans', sans-serif`,
 		heading: `'Bungee', sans-serif`,
-		link: `'bungee-hairline'`,
+		link: `'Bungee hairline'`,
 	},
 
 	components: {
 		Button,
+		customButtonStyles,
 		Menu,
 	},
 });

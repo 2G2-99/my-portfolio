@@ -1,11 +1,9 @@
 import {
-	Box,
 	Card,
 	CardBody,
 	CardFooter,
 	CardHeader,
 	Image,
-	Link,
 } from '@chakra-ui/react';
 import CustomButton from '../../CustomButton';
 
@@ -26,10 +24,11 @@ const Info = ({ image, text, resume, button }) => {
 			</CardHeader>
 			<CardBody>{text}</CardBody>
 			<CardFooter>
-				{/* <Link href={resume} target="_blank" rel="noreferrer">
-					<Box as="button">Resume</Box>
-				</Link> */}
-				<CustomButton linkContent={resume} buttonContent={button} />
+				<CustomButton
+					linkTo={resume}
+					buttonContent={button}
+					variant={'outline.400'}
+				/>
 			</CardFooter>
 		</Card>
 	);

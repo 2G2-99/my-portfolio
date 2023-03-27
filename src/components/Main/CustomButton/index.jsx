@@ -1,9 +1,13 @@
-import { Box, Link } from '@chakra-ui/react';
+import { Box, Link, useStyleConfig } from '@chakra-ui/react';
 
-const CustomButton = ({ linkContent, buttonContent }) => {
+const CustomButton = ({ linkTo, buttonContent, size, variant }) => {
+	const styles = useStyleConfig('customButtonStyles', { size, variant });
+
 	return (
-		<Link href={linkContent} target="_blank" rel="noreferrer">
-			<Box as="button">{buttonContent}</Box>
+		<Link href={linkTo} isExternal>
+			<Box as="button" __css={styles}>
+				{buttonContent}
+			</Box>
 		</Link>
 	);
 };

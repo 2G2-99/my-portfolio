@@ -24,6 +24,7 @@ import {
 	react_logo,
 	selfie,
 } from '../assets/export';
+import Info from '../components/Main/Card/Info';
 
 const About = () => {
 	return (
@@ -35,50 +36,35 @@ const About = () => {
 			align={'center'}
 		>
 			<Container maxW={'container.xl'}>
-				<Card id="about-card" boxShadow={'dark-lg'}>
-					<CardHeader padding={'0'}>
-						<Image
-							id="selfie"
-							alt="That's me"
-							src={selfie}
-							objectFit={'cover'}
-							boxSize={{ sm: 'xs' }}
-							margin={{ base: 'auto', sm: '1rem auto' }}
-							borderRadius={{ base: 'sm', sm: 'full' }}
-							boxShadow={'md'}
-						/>
-					</CardHeader>
-					<CardBody>
-						<Text className="card-text">
-							<Text as={'span'} id="greeting">
-								Hello again!{' '}
+				<Info
+					image={selfie}
+					text={
+						<>
+							<Text className="card-text">
+								<Text as={'span'} id="greeting">
+									Hello again!{' '}
+								</Text>
+								I am part of that generation that started to have access to
+								internet and not only a computer but different devices (of
+								which, several went to the technician.), and there has been a
+								huge gap between use and knowledge about technology.
 							</Text>
-							I am part of that generation that started to have access to
-							internet and not only a computer but different devices (of which,
-							several went to the technician.), and there has been a huge gap
-							between use and knowledge about technology.
-						</Text>
-						<Text className="card-text">
-							What captured my attention and started to make many questions,
-							leading me into more and more doubts. And thus, in search for
-							those answers I started to feel some attraction to discover the
-							huge amount of things to do and why not, create.
-						</Text>
-						<Text className="card-text">
-							So, feel free to check on anything you find!
-						</Text>
-					</CardBody>
-					<CardFooter>
-						<Box
-							as="button"
-							href="https://drive.google.com/file/d/1k5YBTciucnt3N5Dxceq2FNJp9iv7Y21l/view?usp=sharing"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Resume
-						</Box>
-					</CardFooter>
-				</Card>
+							<Text className="card-text">
+								What captured my attention and started to make many questions,
+								leading me into more and more doubts. And thus, in search for
+								those answers I started to feel some attraction to discover the
+								huge amount of things to do and why not, create.
+							</Text>
+							<Text className="card-text">
+								So, feel free to check on anything you find!
+							</Text>
+						</>
+					}
+					resume={
+						'https://drive.google.com/file/d/14zVZNyQ0QBGysXjM8gUDDK0jVwBovqiE/view?usp=sharing'
+					}
+					button={'Resume'}
+				></Info>
 			</Container>
 			<VStack
 				id="display-skills"
