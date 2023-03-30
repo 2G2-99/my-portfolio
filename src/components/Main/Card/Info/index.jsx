@@ -6,17 +6,7 @@ const Info = ({ image, text, resume, button }) => {
 	return (
 		<Card id="about-card" boxShadow={'dark-lg'}>
 			<CardHeader padding={'0'}>
-				{/* <Image
-					id="selfie"
-					alt="That's me"
-					src={image}
-					objectFit={'cover'}
-					boxSize={{ sm: 'xs' }}
-					margin={{ base: 'auto', sm: '1rem auto' }}
-					borderRadius={'md'}
-					boxShadow={'md'}
-				/> */}
-				<Framed id={'selfie'} image={image} size={{ sm: 'sm' }} />
+				<Framed id={'selfie'} image={image} variant={{ sm: 'selfie' }} />
 			</CardHeader>
 			<CardBody>{text}</CardBody>
 			<CardFooter>

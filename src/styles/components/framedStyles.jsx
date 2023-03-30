@@ -10,33 +10,48 @@ const framedStyles = helpers.defineMultiStyleConfig({
 			margin: 'auto',
 		},
 		image: {
+			rounded: 'sm',
 			objectFit: 'cover',
-			boxSize: 'xs',
-			margin: 'auto',
-			borderTopRadius: 'md',
-			boxShadow: 'md',
 		},
 	},
 	// The size styles for each part
 	sizes: {
 		sm: {
 			frame: {
-				borderRight: '3px solid',
-				borderBottom: '3px solid',
-				borderColor: 'brand.400',
-				borderRadius: 'md',
-				margin: '1rem auto',
-				boxShadow: 'base',
+				margin: '0',
 			},
 			image: {
-				borderRadius: 'md',
-				marginRight: '.25em',
-				marginBottom: '.25em',
+				margin: '0',
 			},
 		},
 	},
 	// The variant styles for each part
-	variants: {},
+	variants: {
+		selfie: {
+			frame: {
+				borderRight: 'thick solid',
+				borderBottom: 'thick  solid',
+				borderColor: 'brand.400',
+				rounded: 'lg',
+				margin: '1rem auto',
+				boxShadow: 'base',
+			},
+			image: {
+				margin: 'auto',
+				rounded: 'md',
+				marginRight: '.25em',
+				marginBottom: '.25em',
+				boxShadow: 'md',
+				boxSize: 'xs',
+			},
+		},
+		display: {
+			frame: {},
+			image: {
+				boxShadow: 'md',
+			},
+		},
+	},
 	// The default `size` or `variant` values
 	defaultProps: {},
 });

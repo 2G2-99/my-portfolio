@@ -10,7 +10,11 @@ import {
 	Button,
 	HStack,
 	Link,
+	AspectRatio,
 } from '@chakra-ui/react';
+
+import Framed from '../../Framed';
+import CustomButton from '../../CustomButton';
 
 import { github_logo, goto } from '../../../../assets/export';
 
@@ -45,25 +49,35 @@ const Display = ({
 			key={id}
 			borderRadius={'lg'}
 			boxShadow={'dark-lg'}
+			backdropFilter={'auto'}
+			backdropBlur={'2rem'}
+			bg={'transparent'}
 		>
-			<CardHeader p={'.5rem 0 0 .5rem'}>
-				<Heading className="project-title" fontSize={'2rem'}>
+			<CardHeader>
+				<Heading
+					className="project-title"
+					textAlign={'center'}
+					textShadow={'.175rem .175rem #1A202C'}
+					fontSize={{ base: '1.125rem', sm: '1.25rem', md: '1.5rem' }}
+					color={'white'}
+				>
 					{title}
 				</Heading>
 			</CardHeader>
-			<CardBody>
-				<Image
-					src={picture}
-					className="project-image"
-					alt={`Screenshot of ${title}`}
-					borderRadius={'sm'}
-					boxShadow={'base'}
-				/>
-				<HStack className="technologies" pt={'1rem'}>
+			<CardBody p={'0.5em'}>
+				<AspectRatio ratio={1.85 / 1}>
+					<Framed
+						image={picture}
+						className="project-image"
+						alt={`Screenshot of ${title}`}
+						variant={{ sm: 'display' }}
+					/>
+				</AspectRatio>
+				<HStack className="technologies" p={'.5em'} dropShadow={'dark-lg'}>
 					{technologies}
 				</HStack>
 			</CardBody>
-			<Divider />
+			<Divider color={'brand.100'} />
 			<CardFooter>
 				<ButtonGroup>
 					{generateButtonOf(repository, github_logo)}
