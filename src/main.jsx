@@ -14,4 +14,4 @@ ReactDOM.createRoot(rootElement).render(
 	</React.StrictMode>
 );
 
-//  TODO: Fix height of main, so it covers the total of the screen (except the header 10%)
+//  TODO: Add a nice button to the display card for the external links
