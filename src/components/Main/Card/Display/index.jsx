@@ -11,12 +11,13 @@ import {
 	HStack,
 	Link,
 	AspectRatio,
+	Icon,
 } from '@chakra-ui/react';
 
 import Framed from '../../Framed';
 import CustomButton from '../../CustomButton';
 
-import { github_logo, goto } from '../../../../assets/export';
+import { AiFillGithub, AiFillHome } from '../../../../assets/export';
 
 const Display = ({
 	id,
@@ -26,19 +27,16 @@ const Display = ({
 	repository,
 	deployed,
 }) => {
-	// # Functions
-	// Generate link buttons
-	const generateButtonOf = (site, svg) => {
+
+	const generateButtonOf = (site, icon) => {
 		return site ? (
 			<Link
 				href={site}
 				rel="noreferrer"
 				isExternal={true}
-				// Style
-				width={'9'}
 				padding={'0.5'}
 			>
-				<Image src={svg} alt={`Link to ${site}`} />
+				<Icon as={icon} display={'block'} boxSize={8} />
 			</Link>
 		) : null;
 	};
@@ -64,7 +62,7 @@ const Display = ({
 					{title}
 				</Heading>
 			</CardHeader>
-			<CardBody p={'0.5em'}>
+			<CardBody p={{ base: 0, sm: 1.5, md: 2 }}>
 				<AspectRatio ratio={1.85 / 1}>
 					<Framed
 						image={picture}
@@ -73,15 +71,15 @@ const Display = ({
 						variant={{ sm: 'display' }}
 					/>
 				</AspectRatio>
-				<HStack className="technologies" p={'.5em'} dropShadow={'dark-lg'}>
+				<HStack className="technologies" px={1} py={1.5} >
 					{technologies}
 				</HStack>
 			</CardBody>
 			<Divider color={'brand.100'} />
 			<CardFooter>
 				<ButtonGroup>
-					{generateButtonOf(repository, github_logo)}
-					{generateButtonOf(deployed, goto)}
+					{generateButtonOf(repository, AiFillGithub)}
+					{generateButtonOf(deployed, AiFillHome)}
 				</ButtonGroup>
 			</CardFooter>
 		</Card>

@@ -1,27 +1,20 @@
 import {
-	Box,
-	Card,
-	CardBody,
-	CardFooter,
-	CardHeader,
 	Container,
 	Flex,
 	Heading,
 	VStack,
-	HStack,
-	Image,
 	Text,
 	Tooltip,
-	Spacer,
+	Icon,
 } from '@chakra-ui/react';
 
 import {
-	html_5_logo,
-	css_logo,
-	js_logo,
-	bootstrap_logo,
-	nodejs_logo,
-	react_logo,
+	IoLogoCss3,
+	IoLogoJavascript,
+	BsBootstrapFill,
+	IoLogoNodejs,
+	IoLogoReact,
+	IoLogoHtml5,
 	selfie,
 } from '../assets/export';
 import Info from '../components/Main/Card/Info';
@@ -72,58 +65,54 @@ const About = () => {
 				backdropFilter="auto"
 				backdropContrast={'70%'}
 				boxShadow={'inner'}
-				margin={'10'}
+				m={'10'}
+				px={'2'}
 			>
 				<Heading as={'h3'}>Skills</Heading>
 				<Text>I'm well experienced in this technologies...</Text>
 				<Flex id="skills-set" wrap={'wrap'} justify={'center'}>
-					<Tooltip label={'HTML 5'}>
-						<Image
-							src={html_5_logo}
-							alt="HTML5 logo"
-							h={{ base: '3rem' }}
-							margin={{ base: '2' }}
-						/>
+
+					<Tooltip label={'HTML5'} shouldWrapChildren>
+						<Icon as={IoLogoHtml5} aria-label="HTML5 logo"
+							display={'block'}
+							role='presentation'
+							boxSize={8}
+							m={{ base: '2' }} />
 					</Tooltip>
-					<Tooltip label={'CSS3'}>
-						<Image
-							src={css_logo}
-							alt="CSS logo"
-							h={{ base: '3rem' }}
-							margin={{ base: '2' }}
-						/>
+					<Tooltip label={'CSS3'} shouldWrapChildren>
+						<Icon as={IoLogoCss3} aria-label="CSS3 logo"
+							display={'block'}
+							role='presentation'
+							boxSize={8}
+							m={{ base: '2' }} />
 					</Tooltip>
-					<Tooltip label={'JavaScript'}>
-						<Image
-							src={js_logo}
-							alt="JavaScript logo"
-							h={{ base: '3rem' }}
-							margin={{ base: '2' }}
-						/>
+					<Tooltip label={'JavaScript'} shouldWrapChildren>
+						<Icon as={IoLogoJavascript} aria-label="JavaScript logo"
+							display={'block'}
+							role='presentation'
+							boxSize={8}
+							m={{ base: '2' }} />
 					</Tooltip>
-					<Tooltip label={'Bootstrap'}>
-						<Image
-							src={bootstrap_logo}
-							alt="Bootstrap logo"
-							h={{ base: '3rem' }}
-							margin={{ base: '2' }}
-						/>
+					<Tooltip label={'Bootstrap'} shouldWrapChildren>
+						<Icon as={BsBootstrapFill} aria-label="Bootstrap logo"
+							display={'block'}
+							role='presentation'
+							boxSize={8}
+							m={{ base: '2' }} />
 					</Tooltip>
-					<Tooltip label={'Node.js'}>
-						<Image
-							src={nodejs_logo}
-							alt="Node.js logo"
-							h={{ base: '3rem' }}
-							margin={{ base: '2' }}
-						/>
+					<Tooltip label={'Node.js'} shouldWrapChildren>
+						<Icon as={IoLogoNodejs} aria-label="Node.js logo"
+							display={'block'}
+							role='presentation'
+							boxSize={8}
+							m={{ base: '2' }} />
 					</Tooltip>
-					<Tooltip label={'React'}>
-						<Image
-							src={react_logo}
-							alt="React logo"
-							h={{ base: '3rem' }}
-							margin={{ base: '2' }}
-						/>
+					<Tooltip label={'React'} shouldWrapChildren>
+						<Icon as={IoLogoReact} aria-label="React logo"
+							display={'block'}
+							role='presentation'
+							boxSize={8}
+							m={{ base: '2' }} />
 					</Tooltip>
 				</Flex>
 			</VStack>

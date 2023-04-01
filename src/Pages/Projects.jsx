@@ -1,12 +1,13 @@
-import { Box, Container, Image, SimpleGrid, Tooltip } from '@chakra-ui/react';
+import { Box, Container, Icon, Image, SimpleGrid, Tooltip } from '@chakra-ui/react';
 import Display from '../components/Main/Card/Display';
 
-import listOfProjects from '../data/listOfProjects.json';
+import listOfProjects from '../data/listOfProjects.js';
+
 
 const Projects = () => {
 	return (
 		<Container maxW={'container.xl'} py={'1rem'}>
-			<SimpleGrid columns={{ base: '1', sm: '2', md: '3' }} spacing={'1.5rem'}>
+			<SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={'1.5rem'}>
 				{listOfProjects.map(project => {
 					return (
 						<Display
@@ -16,15 +17,15 @@ const Projects = () => {
 							description={project.description}
 							technologies={project.technologies.map(technology => {
 								return technology ? (
-									<Box key={technology.id} className="technology">
-										<Tooltip label={`${technology.technology}`}>
-											<Image
-												className="tech-icon"
-												src={`${technology.path}`}
-												alt={`Logo of ${technology.technology}`}
-											/>
-										</Tooltip>
-									</Box>
+
+									<Tooltip key={technology.id} className="technology" label={`${technology.technology}`} shouldWrapChildren>
+										<Icon
+											as={technology.icon} display={'block'}
+											role='presentation'
+											boxSize={{ base: 4, sm: 6, md: 8 }}
+											mx={{ base: .5, md: 1.5, lg: 2 }} />
+									</Tooltip>
+
 								) : null;
 							})}
 							repository={project.repository}
