@@ -1,4 +1,4 @@
-import { Box, Container } from '@chakra-ui/react';
+import { Box, Center, Container } from '@chakra-ui/react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Components
@@ -10,20 +10,33 @@ import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
 
+// Font
+import '@fontsource/josefin-sans';
+import '@fontsource/bungee';
+import '@fontsource/bungee-hairline';
+
 function App() {
 	return (
 		<Router>
-			<Box id="root-body" h="100vh">
+			<Box as="header" h={'10vh'} color={'white'}>
 				<Navbar />
-				<Container as="main" h={'90%'} maxW={'full'}>
-					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/about" element={<About />} />
-						<Route path="/projects" element={<Projects />} />
-						<Route path="/contact" element={<Contact />} />
-					</Routes>
-				</Container>
 			</Box>
+			<Center
+				as="main"
+				minH={'90vh'}
+				maxW={'full'}
+				bgImage={'url(./src/assets/svg/backgrounds/liquid-cheese.svg)'}
+				bgSize={'cover'}
+				bgRepeat={'no-repeat'}
+				bgPosition={'center'}
+			>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
+			</Center>
 		</Router>
 	);
 }

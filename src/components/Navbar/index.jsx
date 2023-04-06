@@ -12,30 +12,37 @@ import {
 	MenuButton,
 	MenuList,
 	MenuItem,
+	Center,
 } from '@chakra-ui/react';
 import { NavLink as RouterLink } from 'react-router-dom';
-import { FiMenu } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
 
-export const Navbar = () => {
+const Navbar = () => {
 	const isDesktop = useBreakpointValue({
 		base: false,
 		lg: true,
 	});
+
 	return (
-		<Box as="header" h={'10%'} mb={'2rem'}>
-			<Box as="nav" bg="bg-surface" boxShadow="sm">
-				<Container
-					py={{
-						base: '4',
-						lg: '5',
-					}}
-					maxW="full"
-				>
+		<Box as="nav" h={'100%'} boxShadow="sm" bg={'brand.100'}>
+			<Center h={'100%'}>
+				<Container maxW="full">
 					<HStack spacing="10" justify="space-between">
-						<Text as="span">Santiago Gomez</Text>
+						<Text
+							as="span"
+							fontSize={{ base: '1.25rem', sm: '1.75rem', md: '2.5rem' }}
+							fontFamily={'Bungee'}
+							userSelect={'none'}
+						>
+							Santiago Gomez
+						</Text>
 						{isDesktop ? (
-							<Flex justify="space-between" flex="1">
-								<ButtonGroup variant="link" spacing="8">
+							<Flex justify="space-between">
+								<ButtonGroup
+									variant="navLink"
+									spacing="8"
+									fontFamily={'Bungee'}
+								>
 									{['Home', 'About', 'Projects', 'Contact'].map(item => (
 										<Button
 											as={RouterLink}
@@ -52,13 +59,15 @@ export const Navbar = () => {
 							</Flex>
 						) : (
 							<Box>
-								<Menu placement="bottom-start">
+								<Menu placement="auto-end">
 									<MenuButton
 										as={IconButton}
 										aria-label="Open Menu"
-										variant="ghost"
+										bg={'transparent'}
 										icon={<FiMenu />}
-										fontSize="1.5rem"
+										fontSize={{ base: '1.25rem', sm: '1.75rem' }}
+										_hover={{ bg: 'transparent', color: 'brand.300' }}
+										_active={{ color: 'brand.400' }}
 									/>
 									<MenuList>
 										{['Home', 'About', 'Projects', 'Contact'].map(item => (
@@ -79,7 +88,7 @@ export const Navbar = () => {
 						)}
 					</HStack>
 				</Container>
-			</Box>
+			</Center>
 		</Box>
 	);
 };

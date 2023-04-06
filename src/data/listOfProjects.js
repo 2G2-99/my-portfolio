@@ -1,4 +1,18 @@
-[
+// import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs, IoLogoHtml5 } from 'react-icons/io'
+// import { BsGit, BsBootstrapFill } from 'react-icons/bs'
+// import { SiJquery } from 'react-icons/si'
+
+import {
+	IoLogoCss3,
+	IoLogoJavascript,
+	IoLogoNodejs,
+	IoLogoHtml5,
+	BsGit,
+	BsBootstrapFill,
+	SiJquery,
+} from '../assets/export.js'
+
+const listOfProjects = [
 	{
 		"id": "01",
 		"title": "Password Generator",
@@ -8,7 +22,7 @@
 			{
 				"id": "01",
 				"technology": "JavaScript",
-				"path": "../svg/javascript-svgrepo-com.svg"
+				"icon": IoLogoJavascript
 			}
 		],
 		"repository": "https://github.com/2G2-99/password-generator",
@@ -24,17 +38,17 @@
 			{
 				"id": "01",
 				"technology": "JavaScript",
-				"path": "../svg/javascript-svgrepo-com.svg"
+				"icon": IoLogoJavascript
 			},
 			{
 				"id": "02",
 				"technology": "Git",
-				"path": "../svg/git-svgrepo-com.svg"
+				"icon": BsGit
 			},
 			{
 				"id": "03",
 				"technology": "Node.js",
-				"path": "../svg/node-js-svgrepo-com.svg"
+				"icon": IoLogoNodejs
 			}
 		],
 		"repository": "https://github.com/2G2-99/README-generator",
@@ -49,22 +63,22 @@
 			{
 				"id": "01",
 				"technology": "Bootstrap",
-				"path": "../svg/bootstrap-svgrepo-com.svg"
+				"icon": BsBootstrapFill
 			},
 			{
 				"id": "02",
 				"technology": "CSS 3",
-				"path": "../svg/css-3-svgrepo-com.svg"
+				"icon": IoLogoCss3
 			},
 			{
 				"id": "03",
 				"technology": "JavaScript",
-				"path": "../svg/javascript-svgrepo-com.svg"
+				"icon": IoLogoJavascript
 			},
 			{
 				"id": "04",
 				"technology": "JQuery",
-				"path": "../svg/jquery-svgrepo-com.svg"
+				"icon": SiJquery
 			}
 		],
 		"repository": "https://github.com/2G2-99/weather-dashboard",
@@ -79,22 +93,22 @@
 			{
 				"id": "01",
 				"technology": "Bootstrap",
-				"path": "../svg/bootstrap-svgrepo-com.svg"
+				"icon": BsBootstrapFill
 			},
 			{
 				"id": "02",
 				"technology": "JavaScript",
-				"path": "../svg/javascript-svgrepo-com.svg"
+				"icon": IoLogoJavascript
 			},
 			{
 				"id": "03",
 				"technology": "Git",
-				"path": "../svg/git-svgrepo-com.svg"
+				"icon": BsGit
 			},
 			{
 				"id": "04",
 				"technology": "Node.js",
-				"path": "../svg/node-js-svgrepo-com.svg"
+				"icon": IoLogoNodejs
 			}
 		],
 		"repository": "https://github.com/2G2-99/team-profile-app",
@@ -109,12 +123,12 @@
 			{
 				"id": "01",
 				"technology": "JavaScript",
-				"path": "../svg/javascript-svgrepo-com.svg"
+				"icon": IoLogoJavascript
 			},
 			{
 				"id": "02",
 				"technology": "JQuery",
-				"path": "../svg/jquery-svgrepo-com.svg"
+				"icon": SiJquery
 			}
 		],
 		"repository": "https://github.com/2G2-99/day-scheduler-challenge",
@@ -129,25 +143,26 @@
 			{
 				"id": "01",
 				"technology": "HTML5",
-				"path": "../svg/html-5-svgrepo-com.svg"
+				"icon": IoLogoHtml5
 			},
 			{
 				"id": "02",
 				"technology": "Bootstrap",
-				"path": "../svg/bootstrap-svgrepo-com.svg"
+				"icon": BsBootstrapFill
 			},
 			{
 				"id": "03",
 				"technology": "JavaScript",
-				"path": "../svg/javascript-svgrepo-com.svg"
+				"icon": IoLogoJavascript
 			},
 			{
 				"id": "04",
 				"technology": "JQuery",
-				"path": "../svg/jquery-svgrepo-com.svg"
+				"icon": SiJquery
 			}
 		],
 		"repository": "https://github.com/h-fikri/Travel-List-Jan2023",
 		"deployed": "https://h-fikri.github.io/Travel-List-Jan2023/"
 	}
 ]
+export default listOfProjects
