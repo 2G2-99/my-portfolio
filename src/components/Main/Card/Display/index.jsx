@@ -27,15 +27,9 @@ const Display = ({
 	repository,
 	deployed,
 }) => {
-
 	const generateButtonOf = (site, icon) => {
 		return site ? (
-			<Link
-				href={site}
-				rel="noreferrer"
-				isExternal={true}
-				padding={'0.5'}
-			>
+			<Link href={site} rel="noreferrer" isExternal={true} padding={'0.5'}>
 				<Icon as={icon} display={'block'} boxSize={8} />
 			</Link>
 		) : null;
@@ -71,7 +65,7 @@ const Display = ({
 						variant={{ sm: 'display' }}
 					/>
 				</AspectRatio>
-				<HStack className="technologies" px={1} py={1.5} >
+				<HStack className="technologies" px={1} py={1.5}>
 					{technologies}
 				</HStack>
 			</CardBody>
