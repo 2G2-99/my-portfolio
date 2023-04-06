@@ -1,14 +1,4 @@
-import {
-	ButtonGroup,
-	Container,
-	Flex,
-	HStack,
-	Heading,
-	Icon,
-	Link,
-	Text,
-	VStack,
-} from '@chakra-ui/react';
+import { ButtonGroup, Flex, Heading, Icon, Link, Text } from '@chakra-ui/react';
 import { BsLinkedin, AiFillGithub, IoIosMail } from '../../../../assets/export';
 
 const ContactCard = () => {
