@@ -1,8 +1,7 @@
-import { Box, Container, Icon, Image, SimpleGrid, Tooltip } from '@chakra-ui/react';
+import { Container, Icon, SimpleGrid, Tooltip } from '@chakra-ui/react';
 import Display from '../components/Main/Card/Display';
 
 import listOfProjects from '../data/listOfProjects.js';
-
 
 const Projects = () => {
 	return (
@@ -17,15 +16,20 @@ const Projects = () => {
 							description={project.description}
 							technologies={project.technologies.map(technology => {
 								return technology ? (
-
-									<Tooltip key={technology.id} className="technology" label={`${technology.technology}`} shouldWrapChildren>
+									<Tooltip
+										key={technology.id}
+										className="technology"
+										label={`${technology.technology}`}
+										shouldWrapChildren
+									>
 										<Icon
-											as={technology.icon} display={'block'}
-											role='presentation'
+											as={technology.icon}
+											display={'block'}
+											role="presentation"
 											boxSize={{ base: 4, sm: 6, md: 8 }}
-											mx={{ base: .5, md: 1.5, lg: 2 }} />
+											mx={{ base: 0.5, md: 1.5, lg: 2 }}
+										/>
 									</Tooltip>
-
 								) : null;
 							})}
 							repository={project.repository}

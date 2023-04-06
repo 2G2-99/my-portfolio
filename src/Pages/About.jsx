@@ -71,48 +71,65 @@ const About = () => {
 				<Heading as={'h3'}>Skills</Heading>
 				<Text>I'm well experienced in this technologies...</Text>
 				<Flex id="skills-set" wrap={'wrap'} justify={'center'}>
-
 					<Tooltip label={'HTML5'} shouldWrapChildren>
-						<Icon as={IoLogoHtml5} aria-label="HTML5 logo"
+						<Icon
+							as={IoLogoHtml5}
+							aria-label="HTML5 logo"
 							display={'block'}
-							role='presentation'
+							role="presentation"
 							boxSize={8}
-							m={{ base: '2' }} />
+							m={{ base: '2' }}
+						/>
 					</Tooltip>
 					<Tooltip label={'CSS3'} shouldWrapChildren>
-						<Icon as={IoLogoCss3} aria-label="CSS3 logo"
+						<Icon
+							as={IoLogoCss3}
+							aria-label="CSS3 logo"
 							display={'block'}
-							role='presentation'
+							role="presentation"
 							boxSize={8}
-							m={{ base: '2' }} />
+							m={{ base: '2' }}
+						/>
 					</Tooltip>
 					<Tooltip label={'JavaScript'} shouldWrapChildren>
-						<Icon as={IoLogoJavascript} aria-label="JavaScript logo"
+						<Icon
+							as={IoLogoJavascript}
+							aria-label="JavaScript logo"
 							display={'block'}
-							role='presentation'
+							role="presentation"
 							boxSize={8}
-							m={{ base: '2' }} />
+							m={{ base: '2' }}
+						/>
 					</Tooltip>
 					<Tooltip label={'Bootstrap'} shouldWrapChildren>
-						<Icon as={BsBootstrapFill} aria-label="Bootstrap logo"
+						<Icon
+							as={BsBootstrapFill}
+							aria-label="Bootstrap logo"
 							display={'block'}
-							role='presentation'
+							role="presentation"
 							boxSize={8}
-							m={{ base: '2' }} />
+							m={{ base: '2' }}
+						/>
 					</Tooltip>
 					<Tooltip label={'Node.js'} shouldWrapChildren>
-						<Icon as={IoLogoNodejs} aria-label="Node.js logo"
+						<Icon
+							as={IoLogoNodejs}
+							aria-label="Node.js logo"
 							display={'block'}
-							role='presentation'
+							role="presentation"
 							boxSize={8}
-							m={{ base: '2' }} />
+							m={{ base: '2' }}
+						/>
 					</Tooltip>
 					<Tooltip label={'React'} shouldWrapChildren>
-						<Icon as={IoLogoReact} aria-label="React logo"
+						<Icon
+							as={IoLogoReact}
+							aria-label="React logo"
 							display={'block'}
-							role='presentation'
+							role="presentation"
 							boxSize={8}
-							m={{ base: '2' }} />
+							m={{ base: '2' }}
+						/>
 					</Tooltip>
 				</Flex>
 			</VStack>

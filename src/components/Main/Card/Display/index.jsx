@@ -4,10 +4,8 @@ import {
 	CardBody,
 	CardFooter,
 	Heading,
-	Image,
 	ButtonGroup,
 	Divider,
-	Button,
 	HStack,
 	Link,
 	AspectRatio,
@@ -15,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 
 import Framed from '../../Framed';
-import CustomButton from '../../CustomButton';
+// * import CustomButton from '../../CustomButton';
 
 import { AiFillGithub, AiFillHome } from '../../../../assets/export';
 
@@ -27,15 +25,10 @@ const Display = ({
 	repository,
 	deployed,
 }) => {
-
 	const generateButtonOf = (site, icon) => {
+		console.log(site);
 		return site ? (
-			<Link
-				href={site}
-				rel="noreferrer"
-				isExternal={true}
-				padding={'0.5'}
-			>
+			<Link href={site} rel="noreferrer" isExternal={true} padding={'0.5'}>
 				<Icon as={icon} display={'block'} boxSize={8} />
 			</Link>
 		) : null;
@@ -71,7 +64,7 @@ const Display = ({
 						variant={{ sm: 'display' }}
 					/>
 				</AspectRatio>
-				<HStack className="technologies" px={1} py={1.5} >
+				<HStack className="technologies" px={1} py={1.5}>
 					{technologies}
 				</HStack>
 			</CardBody>
