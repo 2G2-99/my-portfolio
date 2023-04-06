@@ -1,11 +1,4 @@
-import {
-	Box,
-	Container,
-	Icon,
-	Image,
-	SimpleGrid,
-	Tooltip,
-} from '@chakra-ui/react';
+import { Container, Icon, SimpleGrid, Tooltip } from '@chakra-ui/react';
 import Display from '../components/Main/Card/Display';
 
 import listOfProjects from '../data/listOfProjects.js';

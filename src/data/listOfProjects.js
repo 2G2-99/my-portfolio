@@ -1,7 +1,3 @@
-// import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs, IoLogoHtml5 } from 'react-icons/io'
-// import { BsGit, BsBootstrapFill } from 'react-icons/bs'
-// import { SiJquery } from 'react-icons/si'
-
 import {
 	IoLogoCss3,
 	IoLogoJavascript,
