@@ -1,5 +1,7 @@
 import { ButtonGroup, Flex, Heading, Icon, Link, Text } from '@chakra-ui/react';
-import { BsLinkedin, AiFillGithub, IoIosMail } from '../../../../assets/export';
+import { AiFillGithub } from 'react-icons/ai';
+import { IoIosMail } from 'react-icons/io';
+import { BsLinkedin } from 'react-icons/bs';
 
 const ContactCard = () => {
 	const generateButtonOf = (site, icon, iconSize) => {

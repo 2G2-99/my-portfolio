@@ -15,7 +15,7 @@ import {
 import Framed from '../../Framed';
 // * import CustomButton from '../../CustomButton';
 
-import { AiFillGithub, AiFillHome } from '../../../../assets/export';
+import { AiFillGithub, AiFillHome } from 'react-icons/ai';
 
 const Display = ({
 	id,

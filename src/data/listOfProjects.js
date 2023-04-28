@@ -3,10 +3,9 @@ import {
 	IoLogoJavascript,
 	IoLogoNodejs,
 	IoLogoHtml5,
-	BsGit,
-	BsBootstrapFill,
-	SiJquery,
-} from '../assets/export.js';
+} from 'react-icons/io';
+import { BsGit, BsBootstrapFill } from 'react-icons/bs';
+import { SiJquery } from 'react-icons/si';
 
 const listOfProjects = [
 	{

@@ -25,7 +25,7 @@ function App() {
 				as="main"
 				minH={'90vh'}
 				maxW={'full'}
-				bgImage={'url(./src/assets/svg/backgrounds/liquid-cheese.svg)'}
+				bgImage={'url(/svg/liquid-cheese.svg)'}
 				bgSize={'cover'}
 				bgRepeat={'no-repeat'}
 				bgPosition={'center'}

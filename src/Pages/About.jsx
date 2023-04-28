@@ -11,12 +11,11 @@ import {
 import {
 	IoLogoCss3,
 	IoLogoJavascript,
-	BsBootstrapFill,
 	IoLogoNodejs,
-	IoLogoReact,
 	IoLogoHtml5,
-	selfie,
-} from '../assets/export';
+} from 'react-icons/io';
+import { IoLogoReact } from 'react-icons/io5';
+import { BsBootstrapFill } from 'react-icons/bs';
 import Info from '../components/Main/Card/Info';
 
 const About = () => {
@@ -30,7 +29,7 @@ const About = () => {
 		>
 			<Container maxW={'container.xl'}>
 				<Info
-					image={selfie}
+					image={'/images/me.jpeg'}
 					text={
 						<>
 							<Text className="card-text">
