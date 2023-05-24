@@ -63,7 +63,10 @@ const Form = () => {
 			onSubmit={handleOnSubmit}
 		>
 			{formik => (
-				<VStack as={'form'} onSubmit={formik.handleSubmit}>
+				<VStack
+					as={'form'}
+					onSubmit={formik.handleSubmit}
+				>
 					<FormControl
 						isInvalid={formik.errors.username && formik.touched.username}
 					>
@@ -107,7 +110,7 @@ const Form = () => {
 
 					<Button type="submit">submit</Button>
 					{serverState && (
-						<p className={!serverState.ok ? 'errorMsg' : ''}>
+						<p className={serverState.ok ? '' : 'errorMsg'}>
 							{serverState.msg}
 						</p>
 					)}

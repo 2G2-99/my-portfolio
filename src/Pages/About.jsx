@@ -33,7 +33,10 @@ const About = () => {
 					text={
 						<>
 							<Text className="card-text">
-								<Text as={'span'} id="greeting">
+								<Text
+									as={'span'}
+									id="greeting"
+								>
 									Hello again!{' '}
 								</Text>
 								I am part of that generation that started to have access to
@@ -53,10 +56,10 @@ const About = () => {
 						</>
 					}
 					resume={
-						'https://drive.google.com/file/d/14zVZNyQ0QBGysXjM8gUDDK0jVwBovqiE/view?usp=sharing'
+						'https://drive.google.com/file/d/1nA0VF23Q0BkiqtmtNfKUoyccICE2Zxzu/view?usp=sharing'
 					}
 					button={'Resume'}
-				></Info>
+				/>
 			</Container>
 			<VStack
 				id="display-skills"
@@ -69,8 +72,15 @@ const About = () => {
 			>
 				<Heading as={'h3'}>Skills</Heading>
 				<Text>I'm well experienced in this technologies...</Text>
-				<Flex id="skills-set" wrap={'wrap'} justify={'center'}>
-					<Tooltip label={'HTML5'} shouldWrapChildren>
+				<Flex
+					id="skills-set"
+					wrap={'wrap'}
+					justify={'center'}
+				>
+					<Tooltip
+						label={'HTML5'}
+						shouldWrapChildren
+					>
 						<Icon
 							as={IoLogoHtml5}
 							aria-label="HTML5 logo"
@@ -80,7 +90,10 @@ const About = () => {
 							m={{ base: '2' }}
 						/>
 					</Tooltip>
-					<Tooltip label={'CSS3'} shouldWrapChildren>
+					<Tooltip
+						label={'CSS3'}
+						shouldWrapChildren
+					>
 						<Icon
 							as={IoLogoCss3}
 							aria-label="CSS3 logo"
@@ -90,7 +103,10 @@ const About = () => {
 							m={{ base: '2' }}
 						/>
 					</Tooltip>
-					<Tooltip label={'JavaScript'} shouldWrapChildren>
+					<Tooltip
+						label={'JavaScript'}
+						shouldWrapChildren
+					>
 						<Icon
 							as={IoLogoJavascript}
 							aria-label="JavaScript logo"
@@ -100,7 +116,10 @@ const About = () => {
 							m={{ base: '2' }}
 						/>
 					</Tooltip>
-					<Tooltip label={'Bootstrap'} shouldWrapChildren>
+					<Tooltip
+						label={'Bootstrap'}
+						shouldWrapChildren
+					>
 						<Icon
 							as={BsBootstrapFill}
 							aria-label="Bootstrap logo"
@@ -110,7 +129,10 @@ const About = () => {
 							m={{ base: '2' }}
 						/>
 					</Tooltip>
-					<Tooltip label={'Node.js'} shouldWrapChildren>
+					<Tooltip
+						label={'Node.js'}
+						shouldWrapChildren
+					>
 						<Icon
 							as={IoLogoNodejs}
 							aria-label="Node.js logo"
@@ -120,7 +142,10 @@ const About = () => {
 							m={{ base: '2' }}
 						/>
 					</Tooltip>
-					<Tooltip label={'React'} shouldWrapChildren>
+					<Tooltip
+						label={'React'}
+						shouldWrapChildren
+					>
 						<Icon
 							as={IoLogoReact}
 							aria-label="React logo"

@@ -24,10 +24,18 @@ const Navbar = () => {
 	});
 
 	return (
-		<Box as="nav" h={'100%'} boxShadow="sm" bg={'brand.100'}>
+		<Box
+			as="nav"
+			h={'100%'}
+			boxShadow="sm"
+			bg={'brand.100'}
+		>
 			<Center h={'100%'}>
 				<Container maxW="full">
-					<HStack spacing="10" justify="space-between">
+					<HStack
+						spacing="10"
+						justify="space-between"
+					>
 						<Text
 							as="span"
 							fontSize={{ base: '1.25rem', sm: '1.75rem', md: '2.5rem' }}

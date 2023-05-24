@@ -5,8 +5,14 @@ import listOfProjects from '../data/listOfProjects.js';
 
 const Projects = () => {
 	return (
-		<Container maxW={'container.xl'} py={'1rem'}>
-			<SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={'1.5rem'}>
+		<Container
+			maxW={'container.xl'}
+			py={'1rem'}
+		>
+			<SimpleGrid
+				columns={{ base: 1, sm: 2, md: 3 }}
+				spacing={'1.5rem'}
+			>
 				{listOfProjects.map(project => {
 					return (
 						<Display
