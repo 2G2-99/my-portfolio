@@ -1,4 +1,4 @@
-import { Box, Center, Container } from '@chakra-ui/react';
+import { Box, Center } from '@chakra-ui/react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Components
@@ -18,7 +18,11 @@ import '@fontsource/bungee-hairline';
 function App() {
 	return (
 		<Router>
-			<Box as="header" h={'10vh'} color={'white'}>
+			<Box
+				as="header"
+				h={'10vh'}
+				color={'white'}
+			>
 				<Navbar />
 			</Box>
 			<Center
@@ -31,10 +35,22 @@ function App() {
 				bgPosition={'center'}
 			>
 				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/projects" element={<Projects />} />
-					<Route path="/contact" element={<Contact />} />
+					<Route
+						path="/"
+						element={<Home />}
+					/>
+					<Route
+						path="/about"
+						element={<About />}
+					/>
+					<Route
+						path="/projects"
+						element={<Projects />}
+					/>
+					<Route
+						path="/contact"
+						element={<Contact />}
+					/>
 				</Routes>
 			</Center>
 		</Router>
