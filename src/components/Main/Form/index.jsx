@@ -37,7 +37,7 @@ const Form = () => {
 			url: 'https://formspree.io/f/xoqzwbpn',
 			data: values,
 		})
-			.then(response => {
+			.then((response) => {
 				actions.setSubmitting(false);
 				actions.resetForm();
 				handleServerResponse(
@@ -45,7 +45,7 @@ const Form = () => {
 					"Thanks for your message! I'll be in touch with you soon."
 				);
 			})
-			.catch(error => {
+			.catch((error) => {
 				actions.setSubmitting(false);
 				handleServerResponse(false, error.response.data.error);
 			});
@@ -62,7 +62,7 @@ const Form = () => {
 			validationSchema={formSchema}
 			onSubmit={handleOnSubmit}
 		>
-			{formik => (
+			{(formik) => (
 				<VStack as={'form'} onSubmit={formik.handleSubmit}>
 					<FormControl
 						isInvalid={formik.errors.username && formik.touched.username}

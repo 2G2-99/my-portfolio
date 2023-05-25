@@ -13,5 +13,3 @@ ReactDOM.createRoot(rootElement).render(
 		</ChakraProvider>
 	</React.StrictMode>
 );
-
-//  TODO: Add a nice button to the display card for the external links

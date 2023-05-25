@@ -53,7 +53,7 @@ const About = () => {
 						</>
 					}
 					resume={
-						'https://drive.google.com/file/d/14zVZNyQ0QBGysXjM8gUDDK0jVwBovqiE/view?usp=sharing'
+						'https://drive.google.com/file/d/1nA0VF23Q0BkiqtmtNfKUoyccICE2Zxzu/view?usp=sharing'
 					}
 					button={'Resume'}
 				></Info>
