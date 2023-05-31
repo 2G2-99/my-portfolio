@@ -2,7 +2,7 @@ export const buttonStyles = {
 	baseStyle: {},
 	sizes: {},
 	variants: {
-		navLink: props => ({
+		navLink: (props) => ({
 			fontSize: 'lg',
 
 			bg: 'primary',

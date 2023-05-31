@@ -51,7 +51,7 @@ const Navbar = () => {
 									spacing="8"
 									fontFamily={'Bungee'}
 								>
-									{['Home', 'About', 'Projects', 'Contact'].map(item => (
+									{['Home', 'About', 'Projects', 'Contact'].map((item) => (
 										<Button
 											as={RouterLink}
 											to={item === 'Home' ? '/' : item.toLowerCase()}
@@ -78,7 +78,7 @@ const Navbar = () => {
 										_active={{ color: 'brand.400' }}
 									/>
 									<MenuList>
-										{['Home', 'About', 'Projects', 'Contact'].map(item => (
+										{['Home', 'About', 'Projects', 'Contact'].map((item) => (
 											<MenuItem
 												as={RouterLink}
 												to={item === 'Home' ? '/' : item.toLowerCase()}
