@@ -107,7 +107,7 @@ const Form = () => {
 
 					<Button type="submit">submit</Button>
 					{serverState && (
-						<p className={!serverState.ok ? 'errorMsg' : ''}>
+						<p className={serverState.ok ? '' : 'errorMsg'}>
 							{serverState.msg}
 						</p>
 					)}
