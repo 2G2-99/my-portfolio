@@ -5,7 +5,11 @@ const Home = () => {
 	return (
 		<Container id="home">
 			<Hero />
-			<Text position={'absolute'} right={'1'} bottom={'0'}>
+			<Text
+				position={'absolute'}
+				right={'1'}
+				bottom={'0'}
+			>
 				Background by: {/* */}
 				<Link
 					id="attribution-link"

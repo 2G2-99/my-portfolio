@@ -33,22 +33,15 @@ const About = () => {
 					text={
 						<>
 							<Text className="card-text">
-								<Text as={'span'} id="greeting">
-									Hello again!{' '}
-								</Text>
-								I am part of that generation that started to have access to
-								internet and not only a computer but different devices (of
-								which, several went to the technician.), and there has been a
-								huge gap between use and knowledge about technology.
-							</Text>
-							<Text className="card-text">
-								What captured my attention and started to make many questions,
-								leading me into more and more doubts. And thus, in search for
-								those answers I started to feel some attraction to discover the
-								huge amount of things to do and why not, create.
-							</Text>
-							<Text className="card-text">
-								So, feel free to check on anything you find!
+								As a Junior Front-End Developer, I have a solid understanding of
+								HTML, CSS, and Javascript. But I'm always looking for ways to
+								improve my skills and knowledge. So, I joined a bootcamp program
+								where I was able to deepen my understanding of the fundamentals
+								and work with a team using different libraries and frameworks.
+								My ultimate goal is to create visually appealing and responsive
+								websites with efficient and effective code. I know the industry
+								is constantly changing, and I'm excited to stay up-to-date with
+								the latest technologies.
 							</Text>
 						</>
 					}
@@ -56,7 +49,7 @@ const About = () => {
 						'https://drive.google.com/file/d/1UUgXIvDEwrmKPSQ2T1jJWpljLJeTf8tV/view?usp=sharing'
 					}
 					button={'Resume'}
-				></Info>
+				/>
 			</Container>
 			<VStack
 				id="display-skills"
