@@ -1,4 +1,11 @@
-import { Box, Flex, Icon, Progress, Tooltip } from '@chakra-ui/react';
+import {
+	Box,
+	Container,
+	Flex,
+	Icon,
+	Progress,
+	Tooltip,
+} from '@chakra-ui/react';
 
 export default function SkillProgress({
 	tooltipText,
@@ -7,8 +14,8 @@ export default function SkillProgress({
 	progressOnSkill,
 }) {
 	return (
-		<Tooltip label={tooltipText} shouldWrapChildren>
-			<Flex justify={'center'} align={'center'} wrap={'nowrap'}>
+		<Flex justify={'center'} align={'center'} wrap={'nowrap'}>
+			<Tooltip label={tooltipText} placement={'right'} shouldWrapChildren>
 				<Icon
 					as={icon}
 					aria-label={iconLabel}
@@ -17,10 +24,15 @@ export default function SkillProgress({
 					boxSize={8}
 					m={{ base: '2' }}
 				/>
-				<Box w={'100%'}>
-					<Progress value={progressOnSkill} size={{ base: 'sm', md: 'md' }} />
-				</Box>
-			</Flex>
-		</Tooltip>
+			</Tooltip>
+			<Container>
+				<Progress
+					value={progressOnSkill}
+					colorScheme={'orange'}
+					size={'sm'}
+					rounded={'sm'}
+				/>
+			</Container>
+		</Flex>
 	);
 }
