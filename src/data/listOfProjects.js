@@ -30,7 +30,7 @@ const listOfProjects = [
 		title: 'README file generator',
 		picture: '../images/markdown_generator.png',
 		description:
-			'An application on the CLI with the intention to help the developers save some time when creating a quality README, by entering information about the project and then generating a markdown with a template.',
+			'An application on the CLI with the intention to help the developers save time when creating a quality README, by entering information about the project and then generating a markdown with a template.',
 		technologies: [
 			{
 				id: '01',
@@ -56,7 +56,7 @@ const listOfProjects = [
 		title: 'Weather Dashboard',
 		picture: '../images/weather_dashboard.png',
 		description:
-			'Basic application that shows the forecast information of a given location of the current day and the next 4 days. It also keeps track of the searched locations for an easy access.',
+			'Basic application that shows the forecast information of a given location of the current day and the next 4 days. It also keeps track of the searched locations using the local storage for an easy access.',
 		technologies: [
 			{
 				id: '01',
@@ -118,7 +118,7 @@ const listOfProjects = [
 		title: 'Day Scheduler',
 		picture: '../images/scheduler.png',
 		description:
-			'Schedule app to organise the day of a busy developer by the use of the local storage.',
+			'Schedule app to organise the day of a busy developer using the local storage. In this application I focused on the implementation of local storage while working with the current time to verify if the task is overdue, ongoing, or ahead on time.',
 		technologies: [
 			{
 				id: '01',
