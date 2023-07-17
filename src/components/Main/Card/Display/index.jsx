@@ -10,11 +10,11 @@ import {
 	Link,
 	AspectRatio,
 	Icon,
+	Flex,
 } from '@chakra-ui/react';
 
 import Framed from '../../Framed';
 import FramedModal from '../../FramedModal';
-// * import CustomButton from '../../CustomButton';
 
 import { AiFillGithub, AiFillHome } from 'react-icons/ai';
 
@@ -39,7 +39,7 @@ const Display = ({
 		<Card
 			className="project-card"
 			key={id}
-			borderRadius={'lg'}
+			borderRadius={'base'}
 			boxShadow={'dark-lg'}
 			backdropFilter={'auto'}
 			backdropBlur={'2rem'}
@@ -50,30 +50,32 @@ const Display = ({
 					className="project-title"
 					textAlign={'left'}
 					textShadow={'.125rem .125rem #1A202C'}
-					fontSize={{ base: 'md', md: 'lg', lg: '2xl' }}
+					fontSize={{ base: 'md', lg: '2xl' }}
 					color={'white'}
 				>
 					{title}
 				</Heading>
 			</CardHeader>
 			<CardBody p={{ base: 0, sm: 1.5, md: 2 }}>
-				<AspectRatio ratio={1.85 / 1}>
-					<FramedModal
-						showModalButtonText={
-							<Framed
-								image={picture}
-								className="project-image"
-								alt={`Screenshot of ${title}`}
-								variant={{ sm: 'display' }}
-							/>
-						}
-						modalHeader={title}
-						modalBody={description}
-					/>
-				</AspectRatio>
-				<HStack className="technologies" px={1} py={1.5}>
-					{technologies}
-				</HStack>
+				<Flex direction={'column'} justify={'space-between'} gap={4}>
+					<AspectRatio ratio={2 / 1}>
+						<FramedModal
+							showModalButtonText={
+								<Framed
+									image={picture}
+									className="project-image"
+									alt={`Screenshot of ${title}`}
+									variant={{ sm: 'display' }}
+								/>
+							}
+							modalHeader={title}
+							modalBody={description}
+						/>
+					</AspectRatio>
+					<HStack className="technologies" px={{ base: 4, md: 2 }} py={1.5}>
+						{technologies}
+					</HStack>
+				</Flex>
 			</CardBody>
 			<Divider color={'brand.100'} />
 			<CardFooter>
