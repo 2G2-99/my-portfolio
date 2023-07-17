@@ -10,6 +10,7 @@ export default function Framed({ id, image, size, variant }) {
 				src={image}
 				__css={styles.image}
 				loading="lazy"
+				borderRadius={{ base: 'none', md: 'base' }}
 			/>
 		</Center>
 	);

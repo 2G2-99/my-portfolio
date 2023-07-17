@@ -19,7 +19,12 @@ export default function FramedModal({
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<>
-			<Button p={0} bg={'brand.900'} onClick={onOpen}>
+			<Button
+				p={0}
+				bg={'brand.900'}
+				onClick={onOpen}
+				borderRadius={{ base: 'none', md: 'base' }}
+			>
 				{showModalButtonText}
 			</Button>
 			<Modal
@@ -27,7 +32,7 @@ export default function FramedModal({
 				onClose={onClose}
 				isCentered
 				motionPreset="slideInBottom"
-				size={{ base: 'xs', md: 'lg' }}
+				size={{ base: 'sm', md: '4xl' }}
 			>
 				<ModalOverlay />
 				<ModalContent>
